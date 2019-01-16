@@ -1,5 +1,8 @@
 # Botkit Starter Kit for Slack Bots
 
+[Link to Documentation NE](https://botkit.ai/docs/readme-slack.html#getting-started)
+
+[Link to Slack App](https://api.slack.com/apps/AFDV40H5W/general?)
 
 This repo contains everything you need to get started building a Slack bot with [Botkit](https://botkit.ai).
 
