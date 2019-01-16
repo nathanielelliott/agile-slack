@@ -11,14 +11,15 @@ through the conversation are chosen based on the user's response.
 
 module.exports = function(controller) {
 
-    controller.hears(['start standup'], 'direct_message,direct_mention', function(bot, message) {
+    controller.hears(['start standup'], 'direct_message,direct_mention,ambient', function(bot, message) {
 
         bot.startConversation(message, function(err, convo) {
             convo.say('We are now starting our standup for today!');
 
             convo.ask('What did you do yesterday?', function(response, convo) {
 
-                convo.say('That is helpful to learn that you ' + response.text + ' ');
+                /*convo.say('That is helpful to learn that you ' + response.text + ' ');*/
+                convo.say('Thanks for sharing that, now who is next? Thanks for this info from: ' + response.text + ' ');
                 convo.next();
 
             });
